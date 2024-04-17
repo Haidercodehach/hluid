@@ -43,11 +43,8 @@ int WINAPI WinMain(
 
     if (!RegisterClassEx(&wcex))
     {
-        MessageBox(NULL,
-                   _T("Call to RegisterClassEx failed!"),
-                   _T("Windows Desktop Guided Tour"),
-                   NULL);
-
+        // Assuming you want a simple message box with an OK button
+        MessageBoxA(NULL, "Your message here", "Your title here", MB_OK);
         return 1;
     }
 
@@ -79,10 +76,8 @@ int WINAPI WinMain(
 
     if (!hWnd)
     {
-        MessageBox(NULL,
-                   _T("Call to CreateWindow failed!"),
-                   _T("Windows Desktop Guided Tour"),
-                   NULL);
+        // Assuming you want a simple message box with an OK button
+        MessageBoxA(NULL, "Your message here", "Your title here", MB_OK);
 
         return 1;
     }
